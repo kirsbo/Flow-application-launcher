@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="New Theme">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadScrollViewFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="149, 176, 210" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="124, 155, 193" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="124, 155, 193" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="124, 155, 193" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="45" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollPanelBlankSpotFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlAnimatedPropertySetting EndValue="255, 255, 176" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlAnimatedPropertySetting EndValue="252, 220, 122" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="250, 193, 44" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 228, 153" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.5" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlAnimatedPropertySetting EndValue="255, 255, 251" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlAnimatedPropertySetting EndValue="255, 235, 175" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 214, 106" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 228, 153" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.5" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollPanelHorizontalScrollBar" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollBarSecondButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollBarButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollBarButtonArrow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollBarButtonBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="102, 148, 207" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="5" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadScrollViewBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListBoxItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlAnimatedPropertySetting EndValue="250, 193, 101" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              <XmlAnimatedPropertySetting EndValue="248, 142, 42" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="250, 174, 96" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="245, 201, 154" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.5" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Microsoft Sans Serif, 11.25pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="219, 206, 153" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="219, 206, 153" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlAnimatedPropertySetting EndValue="255, 248, 181" Property="Telerik.WinControls.Primitives.BorderPrimitive.InnerColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="OuterInnerBorders" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="222, 184, 137" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+              <XmlAnimatedPropertySetting EndValue="250, 202, 92" Property="Telerik.WinControls.Primitives.BorderPrimitive.InnerColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlComplexCondition" BinaryOperator="OrOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Active" Value="True" />
+                    </Condition2>
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlAnimatedPropertySetting EndValue="Transparent" Property="Telerik.WinControls.Primitives.BorderPrimitive.InnerColor" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemSelectionBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Selected" Value="True" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadListBoxItem.Active" Value="True" />
+                    </Condition2>
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScrollBarBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Layouts.ImageAndTextLayoutPanel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.ImagePrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Microsoft Sans Serif, 12pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.TextRenderingHint" Value="SystemDefault" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ListBoxItemText" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadListBox" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

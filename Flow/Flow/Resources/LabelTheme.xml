@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="LabelTheme">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Calibri, 48pt, style=Bold" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="255, 255, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.TextPrimitive.TextAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.ImagePrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Layouts.ImageAndTextLayoutPanel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Glass" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.666" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="158, 37, 37" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="94, 4, 4" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.FillPrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadLabel" ElementType="Telerik.WinControls.UI.RadLabel+RadLabelRootElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

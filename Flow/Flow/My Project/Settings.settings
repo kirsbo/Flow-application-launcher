@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Edition" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lite</Value>
+    </Setting>
+    <Setting Name="TriggerKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Alt-Q</Value>
+    </Setting>
+    <Setting Name="PathIconGallery" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Images\IconGallery\</Value>
+    </Setting>
+    <Setting Name="PathCommandLayouts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">XML\CommandLayouts\</Value>
+    </Setting>
+    <Setting Name="PathCultures" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">XML\KeyboardCultures\</Value>
+    </Setting>
+    <Setting Name="PathXmlTemplates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">XML\Templates\</Value>
+    </Setting>
+    <Setting Name="DefaultLayoutFilename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Start.xml</Value>
+    </Setting>
+    <Setting Name="CultureName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-US</Value>
+    </Setting>
+    <Setting Name="SoundEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsFirstTimeAppRuns" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="InstalledPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dummy</Value>
+    </Setting>
+    <Setting Name="RevertToHomeLayoutOnActivation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.04</Value>
+    </Setting>
+    <Setting Name="AutoUpdates" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowSplashScreen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

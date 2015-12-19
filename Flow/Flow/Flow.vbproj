@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FEA930B-AD54-4B0A-AD6E-FBCAE8C166EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Flow.My.MyApplication</StartupObject>
+    <RootNamespace>Flow</RootNamespace>
+    <AssemblyName>Flow</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>FlowIcon.ico</ApplicationIcon>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>http://localhost/Flow/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\Compiled Binaries\Flow\</OutputPath>
+    <DocumentationFile>Flow.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Flow.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutomaticUpdater, Version=2.5.16.0, Culture=neutral, PublicKeyToken=d2050be9b2e72e40, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AutomaticUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2009.3.9.1203, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2009.3.9.1203, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2009.3.9.1203, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\api coordination\clsAppCapture.vb" />
+    <Compile Include="Classes\api coordination\clsShellLink.vb" />
+    <Compile Include="Classes\api coordination\clsWinInfo.vb" />
+    <Compile Include="Classes\app coordination\clsMSOffice.vb" />
+    <Compile Include="Classes\interface\clsImages.vb" />
+    <Compile Include="Classes\interface\clsRender.vb" />
+    <Compile Include="Classes\interface\clsSound.vb" />
+    <Compile Include="Classes\interface\clsUserHelp.vb" />
+    <Compile Include="Classes\io\clsDefaultLayoutConfigurator.vb" />
+    <Compile Include="Classes\io\clsKeyConfigurator.vb" />
+    <Compile Include="Classes\io\clsLayoutManager.vb" />
+    <Compile Include="Classes\kernel\clsAppSearch.vb" />
+    <Compile Include="Classes\kernel\clsCommand.vb" />
+    <Compile Include="Classes\kernel\clsCommandHandlers.vb" />
+    <Compile Include="Classes\kernel\clsFlowGeneral.vb" />
+    <Compile Include="Classes\kernel\clsFlowState.vb" />
+    <Compile Include="Classes\kernel\clsGlobalHotKeys.vb" />
+    <Compile Include="Classes\kernel\clsKeyPressHandler.vb" />
+    <Compile Include="Classes\interface\clsOSK.vb" />
+    <Compile Include="Forms\ConfigureForms\frmConfigureApp.Designer.vb">
+      <DependentUpon>frmConfigureApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureExistingLayout.Designer.vb">
+      <DependentUpon>frmConfigureExistingLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureExistingLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureKey.Designer.vb">
+      <DependentUpon>frmConfigureKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureNewLayout.Designer.vb">
+      <DependentUpon>frmConfigureNewLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureNewLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureUrl.Designer.vb">
+      <DependentUpon>frmConfigureUrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmConfigureUrl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmEditKey.Designer.vb">
+      <DependentUpon>frmEditKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmEditKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmFinalizeConfigure.Designer.vb">
+      <DependentUpon>frmFinalizeConfigure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmFinalizeConfigure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmIconGallery.Designer.vb">
+      <DependentUpon>frmIconGallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmIconGallery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmLayoutManager.Designer.vb">
+      <DependentUpon>frmLayoutManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureForms\frmLayoutManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmHelp.Designer.vb">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmInput.Designer.vb">
+      <DependentUpon>frmInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUI.Designer.vb">
+      <DependentUpon>frmUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\baseform.Designer.vb">
+      <DependentUpon>baseform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\baseform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmWelcome.Designer.vb">
+      <DependentUpon>frmWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\frmWelcomeFinish.Designer.vb">
+      <DependentUpon>frmWelcomeFinish.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\frmWelcomeFinish.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep1.Designer.vb">
+      <DependentUpon>frmTutorialStep1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep2.Designer.vb">
+      <DependentUpon>frmTutorialStep2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep3.Designer.vb">
+      <DependentUpon>frmTutorialStep3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep4.Designer.vb">
+      <DependentUpon>frmTutorialStep4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tutorial\frmTutorialStep4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmConfigureApp.resx">
+      <DependentUpon>frmConfigureApp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmConfigureExistingLayout.resx">
+      <DependentUpon>frmConfigureExistingLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmConfigureKey.resx">
+      <DependentUpon>frmConfigureKey.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmConfigureNewLayout.resx">
+      <DependentUpon>frmConfigureNewLayout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmConfigureUrl.resx">
+      <DependentUpon>frmConfigureUrl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmIconGallery.resx">
+      <DependentUpon>frmIconGallery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUI.resx">
+      <DependentUpon>frmUI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FlowClassDiagram.cd" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlowIcon.ico" />
+    <EmbeddedResource Include="Forms\ConfigureForms\frmEditKey.resx">
+      <DependentUpon>frmEditKey.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureForms\frmFinalizeConfigure.resx">
+      <DependentUpon>frmFinalizeConfigure.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\24x24.png" />
+    <None Include="Resources\Add2.png" />
+    <None Include="Resources\AddSmall.png" />
+    <Content Include="Resources\ApplicationMenuTheme.xml" />
+    <Content Include="Resources\BgImage1024x768.png" />
+    <None Include="Resources\BgImageLarge1024x768.png" />
+    <None Include="Resources\BgInput.png" />
+    <Content Include="Resources\BG_KeyRedSmall.png" />
+    <Content Include="Resources\BG_KeyRedWide.png" />
+    <Content Include="Resources\buttonBig.png" />
+    <None Include="Resources\ButtonClick.png" />
+    <Content Include="Resources\buttonKeyIndicator.png" />
+    <EmbeddedResource Include="Forms\ConfigureForms\frmLayoutManager.resx">
+      <DependentUpon>frmLayoutManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmHelp.resx">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmInput.resx">
+      <DependentUpon>frmInput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\baseform.resx">
+      <DependentUpon>baseform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmWelcome.resx">
+      <DependentUpon>frmWelcome.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\frmWelcomeFinish.resx">
+      <DependentUpon>frmWelcomeFinish.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tutorial\frmTutorialStep1.resx">
+      <DependentUpon>frmTutorialStep1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tutorial\frmTutorialStep2.resx">
+      <DependentUpon>frmTutorialStep2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tutorial\frmTutorialStep3.resx">
+      <DependentUpon>frmTutorialStep3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tutorial\frmTutorialStep4.resx">
+      <DependentUpon>frmTutorialStep4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ButtonTheme.xml" />
+    <Content Include="Resources\buttonWide.png" />
+    <None Include="Resources\ContextMenu.png" />
+    <None Include="Resources\Click.wav" />
+    <Content Include="Resources\DialIcon.png" />
+    <Content Include="Resources\DialIconLarge.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Edit1.png" />
+    <None Include="Resources\Done.png" />
+    <Content Include="Resources\EnterIcon.png" />
+    <None Include="Resources\keyBG.gif" />
+    <None Include="Resources\keyBG.png" />
+    <None Include="Resources\keyBGJpg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\flow.ico" />
+    <None Include="Resources\hoverIconForEmptyKey.png" />
+    <None Include="Resources\FlowLogo ME.png" />
+    <None Include="Resources\HelpIcon.png" />
+    <EmbeddedResource Include="Resources\LabelTheme.xml" />
+    <None Include="Resources\GoToDefaultLayout.png" />
+    <None Include="Resources\Minimize.png" />
+    <EmbeddedResource Include="Resources\frmUIkeyLabel.xml" />
+    <None Include="Resources\KeyIndicatorBox.png" />
+    <None Include="Resources\flow_gr.png" />
+    <None Include="Resources\Logo500x500.png" />
+    <None Include="Resources\notification.ico" />
+    <None Include="Resources\KeyIndicatorBG.png" />
+    <None Include="Resources\MenuButton.png" />
+    <None Include="Resources\MenuButtonHover.png" />
+    <None Include="Resources\Hover.png" />
+    <None Include="Resources\Keyboard.png" />
+    <None Include="Resources\iconLargeExclamation.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\LogoIcon.ico" />
+    <Content Include="Resources\Onscreen Keyboard.png" />
+    <EmbeddedResource Include="Resources\SmallButtonTheme.xml" />
+    <None Include="Resources\Remove.png" />
+    <None Include="Resources\TransparentBox.png" />
+    <None Include="Resources\Tutor_Configpopup.png" />
+    <None Include="Resources\Tutor_Configure.png" />
+    <None Include="Resources\Tutor_Layout.png" />
+    <None Include="Resources\Tutor_Settings.png" />
+    <None Include="Resources\Tutor_ActivateFlow.png" />
+    <None Include="Resources\Tutor_ActivateFlow2.png" />
+    <None Include="Resources\OSK 1024x768v2.png" />
+    <None Include="Resources\SwitchToLayout.png" />
+    <None Include="Resources\transparentLargeBox.png" />
+    <EmbeddedResource Include="Resources\ThemeListbox.xml" />
+    <EmbeddedResource Include="Resources\ThemeListboxV2.xml" />
+    <None Include="Resources\Startup 2.wav" />
+    <None Include="Resources\SoundAlert.wav" />
+    <None Include="Resources\SoundAlert2.wav" />
+    <None Include="Resources\SoundBlup.wav" />
+    <None Include="Resources\SoundBlup2.wav" />
+    <None Include="Resources\SoundChangeLayout.wav" />
+    <None Include="Resources\SoundClick.wav" />
+    <None Include="Resources\SoundClick2.wav" />
+    <None Include="Resources\SoundStartup.wav" />
+    <None Include="Resources\SoundStartup2.wav" />
+    <None Include="Resources\Splash.png" />
+    <None Include="Resources\OSK-1024x768 .png" />
+    <None Include="Resources\SmallHelp.png" />
+    <None Include="Resources\RecycleSmall.png" />
+    <None Include="Resources\Previous.png" />
+    <None Include="Resources\Previous1.png" />
+    <None Include="Resources\sigma_general_close_128.png" />
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FlowSettings.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\devClasses\" />
+    <Folder Include="References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" -n --newline-flush</PostBuildEvent>
+  </PropertyGroup>
+</Project>
