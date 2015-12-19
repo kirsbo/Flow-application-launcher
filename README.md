@@ -16,7 +16,6 @@ This hasn't been updated for a while, so there might be inconsistencies, however
 **Developer Requirements**
 
 .NET framework 2.0
-
 Telerik rad controls (you will need Radcontrols for Winforms to be able to modify the UI).
 
 **If you are just interested in using the application**
