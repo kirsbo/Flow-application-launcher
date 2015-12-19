@@ -26,7 +26,7 @@ You can have an unlimited amount of onscreen keyboard layouts, each with their o
 
 
 
-'''Testimonials from Flow users'''
+**Testimonials from Flow users**
 
 "I loved it. It is simple to use. The interface is very clean. I loved it from the very first minute. I have already recommended it to a friend. Two thumbs up to developers." - Ed
 
@@ -41,4 +41,3 @@ You can have an unlimited amount of onscreen keyboard layouts, each with their o
 "A definite thumbs up for this one." - Dave
 
 "Very good software. I like it." - Rapunzelo
-
