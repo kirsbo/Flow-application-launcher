@@ -1,6 +1,9 @@
 Flow is an application launcher me and my team developed back in 2009 or 10. It was initially for commercial purpose, but has since been open-sourced. It's built in Winforms, VB.NET and a bunch of WinAPI code.
 
-Click the image below to watch the YouTube video of Flow:
+
+
+**Click the image below to watch the YouTube video of Flow**
+
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=mcu87l_VaZI
 " target="_blank"><img src="http://img.youtube.com/vi/mcu87l_VaZI/maxresdefault.jpg" 
@@ -15,6 +18,16 @@ This hasn't been updated for a while, so there might be inconsistencies, however
 .NET framework 2.0
 
 Telerik rad controls (you will need Radcontrols for Winforms to be able to modify the UI).
+
+**If you are just interested in using the application**
+If you just want to try the application without building, you can download the full installer from the "Installer" folder. This is the original time-limited version. 
+
+You can use the following credentials to activate it. It is fully functional even without activation, but it will expire 30 days after installing.
+
+
+E-mail: open@source.com
+
+Serial: 437A3CD700AB8C9D56275EBCDC134F96
 
 **Description**
 
