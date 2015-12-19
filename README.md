@@ -7,6 +7,7 @@ Click the image below to watch the YouTube video of Flow:
 alt="Flow application launcher" border="10"/></a>
 
 **Documentation** can be found at: http://flowsolution.wikidot.com/start 
+
 This hasn't been updated for a while, so there might be inconsistencies, however most should be accurate.
 
 **Requirements**
