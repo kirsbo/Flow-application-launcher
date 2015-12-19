@@ -10,10 +10,13 @@ alt="Flow application launcher" border="10"/></a>
 This hasn't been updated for a while, so there might be inconsistencies, however most should be accurate.
 
 **Requirements**
+
 .NET framework 2.0
+
 Telerik rad controls (you will need Radcontrols for Winforms to be able to modify the UI).
 
 **Description**
+
 Flow was sold under the slogan "the world's fastest application launcher". It uses a different approach to accessing shortcuts compared to competing applications such as Launchy and similar.
 
 When activated, usual application launchers gives you a prompt where you can type the name of the shortcut you are after. Flow on the other hand displays an onscreen keyboard, with shortcuts visible on the keys. You then simply press the key on your keyboard, that corresponds to the shortcut you are after.
