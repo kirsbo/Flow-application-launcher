@@ -24,7 +24,7 @@ If you just want to try the application without building, you can download the f
 You can use the following credentials to activate it. It is fully functional even without activation, but it will expire 30 days after installing.
 
 
-E-mail: open@source.com
+E-mail (case sensitive): open@source.com
 
 Serial: 437A3CD700AB8C9D56275EBCDC134F96
 
