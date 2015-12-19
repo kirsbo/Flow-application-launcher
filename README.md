@@ -9,17 +9,18 @@ Flow is an application launcher me and my team developed back in 2009 or 10. It 
 " target="_blank"><img src="http://img.youtube.com/vi/mcu87l_VaZI/maxresdefault.jpg" 
 alt="Flow application launcher" border="10"/></a>
 
-**Documentation** can be found at: http://flowsolution.wikidot.com/start 
+**Developer documentation** can be found at: http://flowsolution.wikidot.com/start 
 
 This hasn't been updated for a while, so there might be inconsistencies, however most should be accurate.
 
-**Requirements**
+**Developer Requirements**
 
 .NET framework 2.0
 
 Telerik rad controls (you will need Radcontrols for Winforms to be able to modify the UI).
 
 **If you are just interested in using the application**
+
 If you just want to try the application without building, you can download the full installer from the "Installer" folder. This is the original time-limited version. 
 
 You can use the following credentials to activate it. It is fully functional even without activation, but it will expire 30 days after installing.
